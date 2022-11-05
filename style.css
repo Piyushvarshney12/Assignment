@@ -1,0 +1,190 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    /* background-color: black; */
+}
+h3  {
+        color: white;
+        padding-top: 26px;
+        padding-left: 15px;
+        font-size: xx-large;
+    }
+header{
+    display: flex;
+    background-color: rgb(92, 29, 29);
+    /* position: fixed; */
+    margin-top: 10px;
+}
+.logo img{
+ padding-left: 180px;
+ padding-top: 10px;
+}
+.navbar{
+    padding-left: 135px;
+    padding-top: 30px;
+    font-size: larger;
+}
+a{
+    padding-left: 75px;
+    color: white;
+    text-decoration: none;  
+}
+/* section{
+    background: url("about-img.jpeg") 
+    ;background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+} */
+.logo img{
+    height: 74px;
+   
+}
+a:hover{
+  
+    color: rgb(37, 90, 90);
+}
+.book{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #29d9d5;
+    border: 2px solid #29d9d5;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-shadow: 0px 0px 3px cadetblue;
+    flex-wrap: wrap;
+    margin-left: 80px;
+}
+.book:hover{
+    background-color: cadetblue;
+    color: white;
+}
+main{
+    padding: 70px;
+}
+.p{
+    background-color: rgb(211, 193, 171);
+    padding: 20px;
+    border-radius: 10px;
+}
+.p h2{
+    color: blue;
+    padding: 2px;
+}
+.p p{
+    color: black;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+.card{
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center;
+    transition: 1s;
+}
+.card:hover{
+    background-color: rgba(150, 147, 147, 0.571);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3y14hdVAFEAZrIk2hXFz8jD-HghICY6NAaQ&usqp=CAU");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    filter: grayscale(2);
+    cursor: pointer;
+}
+
+.banner{
+    /* height: 50vh; */
+    width: 100%;
+    background-image: url("https://media.istockphoto.com/id/1201252148/photo/butterflies.jpg?s=612x612&w=0&k=20&c=p8gc2ZTDkJCRsI9r2yHGD2Py4LSv7vznpJs0N-H3qRI=");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 100px;
+}
+.banner h3{
+    color:#29d9d5;
+    font-size: 30px;
+    padding: 20px;
+    text-shadow: 0px 0px 3px cadetblue;
+}
+.banner h1{
+    font-size: 70px;
+    text-shadow: 2px 2px 3px black;
+}
+.banner p{
+    text-align: center;
+    padding: 10px;
+    opacity: .7;
+}
+footer{
+    /* height: 50vh; */
+    background-color: rgb(10, 9, 9);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 70px 20px;
+}
+.photo,.contact,.news{
+    width: 400px;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+.photo h3,.contact h3,.news h3{
+    padding: 20px;
+}
+.photo p,.contact p,.news p{
+    padding: 10px;
+    opacity: .7;
+}
+.news input{
+    width: 300px;
+    height: 40px;
+    background-color:transparent;
+    border: 2px solid #29d9d5;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0px;
+}
+@media screen and (max-width:900px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    main{
+        padding: 200px 50px;
+    }
+}
+@media screen and (max-width:500px ){
+    .cards{
+        grid-template-columns : 1fr;
+    }
+    main{
+        padding: 250px 10px;
+    }
+}
+.contact {
+    color: white;
+}
+.news{
+    color: white;
+}
+.photo{
+    color: white;
+}
